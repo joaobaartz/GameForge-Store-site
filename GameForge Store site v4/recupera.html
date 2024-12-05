@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha</title>
+    <link rel="stylesheet" href="CSS/loginest.css">
+    <script src="JS/recupera.js" defer></script>
+    <link rel="icon" href="images/logoIcon.png" type="image/png">
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Recupere sua senha<br>e volte para a equipe GameForge Store</h1>
+            <a href="index.html">
+                <img src="images/Online-games-addiction-unscreen.gif" class="left-login-img" alt="imagem logo">
+            </a>
+        </div>
+        <div class="card-login">
+            <h1>Recuperar Senha</h1>
+            <form id="form-recuperar" onsubmit="recuperarSenha(event)">
+                <div class="textfield">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                    <div class="error-msg" id="erro-email"></div>
+                </div>
+                <button type="submit" class="btn-login">Recuperar Senha</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

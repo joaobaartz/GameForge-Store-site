@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="CSS/loginest.css">
+    <script src="JS/cadastrojava.js" defer></script>
+    <link rel="icon" href="images/logoIcon.png" type="image/png">
+</head>
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Crie sua conta<br>e entre para o nosso time GameForge Store</h1>
+            <a href="index.html">
+                <img src="images/Online-games-addiction-unscreen.gif" class="left-login-img" alt="imagem logo">
+            </a>
+        </div>
+        <div class="card-login">
+            <h1>Cadastro</h1>
+            <form id="form-cadastro" onsubmit="cadastrar(event)">
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" id="usuario" placeholder="Nome de usuário" required>
+                    <div class="error-msg" id="erro-usuario"></div>
+                </div>
+                <div class="textfield">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                    <div class="error-msg" id="erro-email"></div>
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Crie sua senha" required>
+                    <div class="error-msg" id="erro-senha"></div>
+                </div>
+                <div class="textfield">
+                    <label for="confirmar-senha">Confirmar Senha</label>
+                    <input type="password" name="confirmar-senha" id="confirmar-senha" placeholder="Confirme sua senha" required>
+                    <div class="error-msg" id="erro-confirmar-senha"></div>
+                </div>
+                <button type="submit" class="btn-login">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameForge Store</title>
+
+    <!-- Adiciona o favicon -->
+    <link rel="icon" href="images/logoIcon.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- JS -->
+    <script src="JS/sistema.js" defer></script>
+    <script src="JS/menu.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu_logo">
+                <img src="images/logo.png" alt="Logo GameForce Store">
+            </div><!--menu_logo-->
+            <div class="menu">
+                <ul>
+                    <li><a href="produtos.html">Produtos<hr></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=479999999">Contato<hr></a></li>
+                    <li><a href="login.html">Entrar<hr></a></li>
+                    <li><a href="carrinho.html"><img src="images/carrinho.png" alt="Carrinho" height="40" width="33"></a></li>
+                </ul>
+                    <div class="search-box">
+                        <input type="text" class="search-txt" placeholder="Pesquisar">
+                        <a href="produtos.html"class="search-btn">
+                            <img src="images/loupe.png" alt="Lupa" height="20" width="20">
+                        </a>
+                    </div>
+            </div><!--menu-->
+            <div class="menu_mobile">
+                <div class="menu_hamburguer">
+                    <svg onclick="btnMenu()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                    </svg>
+                </div>
+                <ul id="menu">
+                    <li><a href="produtos.html">Produtos<hr></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=474">Contato<hr></a></li>
+                    <li><a href="login.html">Entrar<hr></a></li>
+                </ul>
+            </div>
+        </nav><!--nav-->
+        <main>
+            <div class="texto_main">
+                 <p>Fortaleça sua máquina com as peças importadas da GameForce Store.</p>
+                 <hr>
+            </div><!--texto_main-->
+        </main><!--main-->
+    </header><!--header-->
+    <div class="container_mkt">
+        <div class="block1">
+            <img src="images/pc1.webp" alt="Img">
+        </div>
+        <div class="block2">
+            <h1>Qualidade de acabamento com um design profissional para deixar seu setup mais estético.</h1>
+        </div>
+    </div>
+    <div class="promocoes">
+        <h1>
+            <span style="color: red; margin-right: 8px;">🛍️</span>
+            Peças mais vendidas
+        </h1>
+    </div>
+    <div class="container_produtos">
+        <div class="produtos">
+            <img src="./imga/122.jfif" alt= "" width="350" height="359">
+            <h3>Cadeira Gaming</h3>
+            <del>R$ 2.499,99</del>
+            <p>R$1.859,99</p>
+            <button class="btn_adicionar" onclick="AdicionarAoCarrinho('Cadeira Gaming', 1859.99)">Comprar</button>
+        </div>
+        <div class="produtos">
+            <img src="./imga/133.jfif" alt="" width="350px" height="359px">
+            <h3>Headset Gamer</h3>
+            <del>R$ 499,90</del>
+            <p>R$289,99</p>
+            <button class="btn_adicionar" onclick="AdicionarAoCarrinho('Headset Gamer', 289.99)">Comprar</button>
+        </div>
+        <div class="produtos">
+            <img src="./imga/144.webp" alt= "" width="350" height="359">
+            <h3>Pc Gamer Completo</h3>
+            <del>R$ 4.199,90</del>
+            <p>R$3.149,90</p>
+            <button class="btn_adicionar" onclick="AdicionarAoCarrinho('Pc Gamer Completo', 3149.90)">Comprar</button>
+        </div>
+        <div class="produtos">
+            <img src="./imga/155.webp" alt="" width="350px" height="359px">
+            <h3>Notebook gamer</h3>
+            <del>R$ 5159,90</del>
+            <p>R$4589,90</p>
+            <button class="btn_adicionar" onclick="AdicionarAoCarrinho('Monitor Fmaxx', 4589.90)">Comprar</button>
+        </div>
+        <div class="produtos">
+            <img src="./imga/244.jpg" alt="" width="350px" height="359px">
+            <h3>Mouse Gamer</h3>
+            <del>R$ 129,90</del>
+            <p>R$89,90</p>
+            <button class="btn_adicionar" onclick="AdicionarAoCarrinho('Mouse Gamer Warrior Keon', 89.90)">Comprar</button>
+        </div>
+        <div class="produtos">
+            <img src="./imga/245.webp" alt="" width="350px" height="359px">
+            <h3>Teclado mecanico</h3>
+            <del>R$499,00</del>
+            <p>R$299,99</p>
+            <button class="btn_adicionar" onclick="AdicionarAoCarrinho('teclado mecanico', 1299.99)">Comprar</button>
+        </div>
+        <div class="produtos">
+            <img src="./imga/555.jpg" alt="" width="350px" height="359px">
+            <h3>Fone de ouvido gamer</h3>
+            <del>R$ 194,67</del>
+            <p>R$89,90</p>
+            <button class="btn_adicionar" onclick="AdicionarAoCarrinho('Fone de ouvido gamer', 89.90)">Comprar</button>
+        </div>
+        <div class="produtos">
+            <img src="./imga/777.jpg" alt="" width="350px" height="359px">
+            <h3>HyperX Microfone Gamer</h3>
+            <del>R$ 889,99</del>
+            <p>R$2.789,89</p>
+            <button class="btn_adicionar" onclick="AdicionarAoCarrinho('HyperX Microfone Gamer', 689,90)">Comprar</button>
+        </div>
+        <div class="produtos">
+            <img src="./imga/1111.webp" alt="" width="350px" height="359px">
+            <h3>Webcam FullHD 1080P</h3>
+            <del>R$ 159,90</del>
+            <p>R$79,99</p>
+            <button class="btn_adicionar"  onclick="AdicionarAoCarrinho('Webcam FullHD 1080P', 79.99)">Comprar</button>
+        </div>
+        <div class="produtos">
+            <img src="./imga/1222.jfif" alt="" width="350px" height="359px">
+            <h3>Mouse Pad Gamer</h3>
+            <del>R$ 99,90</del>
+            <p>R$69,90</p>
+            <button class="btn_adicionar" onclick="AdicionarAoCarrinho('Mouse Pad Gamer', 69.90)">Comprar</button>
+        </div>
+        <br>
+        
+    </div>
+    
+    <script src="./js/scripts.js"></script>
+    <div class="container_produtos">
+       <!--Produtos do Site-->
+    </div>
+    <section>
+        <div class="bloco_imagem">
+            <img src="images/processador-i9.avif" alt="Img Processador">
+        </div><!--bloco_imagem-->
+        <div class="bloco_texto">
+            <p>Compre peças de qualidade para seu PC e desfrute de uma ótima jogabilidade com Ray Tracing ativado e processadores de alto desempenho.</p>
+            <hr>
+        </div><!--bloco_texto-->
+    </section><!--section-->
+    <footer>
+        <p>GameForge Melhor Empresa De Peças Do Brasil <br>
+           GameForge Store - &copy; 2024
+        </p>
+    </footer>
+</body>
+</html>
